@@ -50,7 +50,7 @@ class SSIRenderer extends RoutableFragmentRenderer
             $uri = $this->generateFragmentUri($uri, $request);
         }
 
-        $uri = $this->signer->sign($uri);
+        $uri = $this->signer->sign($request->getSchemeAndHttpHost().$uri);
 
         if (!\strncmp($uri, $request->getSchemeAndHttpHost(), \strlen($request->getSchemeAndHttpHost()))) {
             $uri = \substr($uri, \strlen($request->getSchemeAndHttpHost()));
