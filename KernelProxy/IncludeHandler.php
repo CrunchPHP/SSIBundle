@@ -64,7 +64,7 @@ class IncludeHandler
         $parameters = $files = array();
         $cookies = $this->request->cookies->all();
         $server = $this->request->server->all();
-        $subRequest = Request::create($source, 'GET', $parameters, $cookies, array(), $server);
+        $subRequest = Request::create($source, 'GET', $parameters, $cookies, $files, $server);
 
         $response = $this->kernel->handle($subRequest, HttpKernelInterface::SUB_REQUEST, true);
 
