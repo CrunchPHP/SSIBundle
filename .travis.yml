@@ -19,7 +19,7 @@ env:
   - SYMFONY_VERSION=3.0.*
 
 before_script:
-  - git config --global github.accesstoken $GITHUB_OAUTH_TOKEN
+  - composer config github-oauth.github.com --global $GITHUB_OAUTH_TOKEN
   - composer self-update
   - composer require symfony/http-foundation:${SYMFONY_VERSION} --no-update
   - composer require symfony/http-kernel:${SYMFONY_VERSION} --no-update
