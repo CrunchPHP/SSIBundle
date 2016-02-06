@@ -1,6 +1,11 @@
 Crunch\SSIBundle
 ================
 
+Note: Since [Symfony 2.6.0-beta1](http://symfony.com/blog/symfony-2-6-0-beta1-released)
+SSI support is integrated into Symfony itself, thus bundle is "partially deprecated"
+and aims to primary support <2.6. This said when there are incompatibility issues
+with versions >=2.6 I'd suggest to use the builtin functionality instead of this bundle.
+
 [![Build Status](https://travis-ci.org/KingCrunch/SSIBundle.png?branch=master)](https://travis-ci.org/KingCrunch/SSIBundle)
 [![Total Downloads](https://poser.pugx.org/crunch/ssi-bundle/d/total.png)](https://packagist.org/packages/crunch/ssi-bundle)
 [![Latest Stable Version](https://poser.pugx.org/crunch/ssi-bundle/version.png)](https://packagist.org/packages/crunch/ssi-bundle)
